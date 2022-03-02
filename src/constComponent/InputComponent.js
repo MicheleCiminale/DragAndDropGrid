@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 
 const InputComponent = (props) =>{
-    debugger
 
     const [state, setState] = useState([{id: props.state, value:"ciao"}])
     const [value, setValue] = useState(null)
@@ -19,6 +18,7 @@ const InputComponent = (props) =>{
 
     return(
         <div>
+
             {props.text}
             <input type="text" id="input" name="input" value={value} onChange={e=> insertValue(e)}/>
         </div>

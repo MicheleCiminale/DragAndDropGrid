@@ -1,4 +1,5 @@
 import InputComponent from "../constComponent/InputComponent";
+import RadioGroupComponent from "../constComponent/RadioGroupComponent";
 
 const ITEMS = [
     {
@@ -25,6 +26,11 @@ const ITEMS = [
         id: '6',
         content: 'Campo di input',
         component: (value) => <InputComponent state={value} />
+    },
+    {
+        id: '7',
+        content: 'Radio Group',
+        component: (value) => <RadioGroupComponent state={value} />
     }
 ];
 

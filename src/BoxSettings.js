@@ -1,6 +1,7 @@
 import React from "react"
 import 'antd/dist/antd.css';
 import { Modal} from 'antd';
+import InputComponent from "./constComponent/InputComponent";
 
 function BoxSettings(props){
 
@@ -15,7 +16,7 @@ function BoxSettings(props){
     return(
         <div>
             <Modal title="Basic Modal" visible={props.show} onOk={()=>props.handleOk(approved)} onCancel={()=>props.handleCancel(refuse)}>
-
+                <InputComponent/>
             </Modal>
         </div>
     )
